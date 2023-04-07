@@ -1,8 +1,8 @@
 node{
      def mavenHome = tool name: 'maven'
-	/*stage('1.clonecode'){
+	stage('1.clonecode'){
 	git credentialsId: 'git-credentials', url: 'https://github.com/LinelAyeah/maven-web-application'
-	}*/
+	}
 	stage('2.mavenbiuld'){
       sh "${mavenHome}/bin/mvn package"
 	}
